@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的语音列表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            padding: 32px 28px;
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1f2a3a;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+        .subtitle {
+            color: #6b7a8f;
+            font-size: 14px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid #eef2f6;
+            padding-bottom: 16px;
+        }
+        .audio-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        .audio-item:last-child {
+            border-bottom: none;
+        }
+        .file-name {
+            width: 160px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c3e50;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 16px;
+        }
+        audio {
+            flex: 1;
+            min-width: 200px;
+            height: 40px;
+            outline: none;
+        }
+        audio::-webkit-media-controls-panel {
+            background-color: #f8fafc;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+            .audio-item {
+                flex-wrap: wrap;
+            }
+            .file-name {
+                width: 100%;
+                margin-bottom: 8px;
+                white-space: normal;
+            }
+            audio {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 语音列表</h1>
+        <div class="subtitle">点击播放按钮试听 · 共 6 条语音（WAV 格式）</div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_12_0</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_12_0.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_12_0-no</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_12_0-no.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_13_0</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_13_0.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_13_0-no</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_13_0-no.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_15_0</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_15_0.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+
+        <div class="audio-item">
+            <span class="file-name">S03_P09_15_0-no</span>
+            <audio controls preload="metadata">
+                <source src="S03_P09_15_0-no.wav" type="audio/wav">
+                您的浏览器不支持 audio 元素。
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
